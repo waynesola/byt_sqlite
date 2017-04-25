@@ -1,3 +1,4 @@
+#!usr/bin/python
 # -*- coding: utf-8 -*-
 
 # Define here the models for your scraped items
@@ -9,6 +10,8 @@ import scrapy
 
 
 class BytSzjjItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+    title = scrapy.Field()
+    publish = scrapy.Field()
+    text = scrapy.Field()
+    link = scrapy.Field()
     pass
