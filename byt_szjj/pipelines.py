@@ -11,6 +11,7 @@ class BytSzjjPipeline(object):
             # conn = sqlite3.connect('C:/Program Files/DB Browser for SQLite/database/rmrb.db')
             conn = sqlite3.connect('C:/Program Files/DB Browser for SQLite/database/byt.db')
             cur = conn.cursor()
+            # 表名是szjj
             sql = "insert into szjj(title,publish,link,text) values (?,?,?,?)"
             cur.execute(sql, (item['title'], item['publish'], item['link'], item['text'],))
             conn.commit()
