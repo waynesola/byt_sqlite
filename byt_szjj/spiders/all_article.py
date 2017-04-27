@@ -3,9 +3,7 @@
 
 import scrapy
 from bs4 import BeautifulSoup
-import arrow
 import urlparse
-import datetime
 from ..items import BytSzjjItem
 import re
 
