@@ -9,7 +9,7 @@ import re
 
 
 class AllArticles(scrapy.Spider):
-    name = "szjj"
+    name = "all"
     allowed_domains = ["banyuetan.org"]
     start_urls = [
         "http://www.banyuetan.org/chcontent/sz/szgc/index.shtml"
