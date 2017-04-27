@@ -9,10 +9,10 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'byt_sqlite'
+BOT_NAME = 'byt_szjj'
 
-SPIDER_MODULES = ['byt_sqlite.spiders']
-NEWSPIDER_MODULE = 'byt_sqlite.spiders'
+SPIDER_MODULES = ['byt_szjj.spiders']
+NEWSPIDER_MODULE = 'byt_szjj.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'byt_sqlite (+http://www.yourdomain.com)'
@@ -52,7 +52,7 @@ COOKIES_ENABLED = False
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'byt_sqlite.middlewares.RandomUserAgent': 1,
+    'byt_szjj.middlewares.RandomUserAgent': 1,
 }
 
 # Enable or disable extensions
@@ -64,7 +64,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'byt_sqlite.pipelines.BytSzjjPipeline': 300,
+    'byt_szjj.pipelines.BytSzjjPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

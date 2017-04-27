@@ -17,7 +17,7 @@ class AllArticles(scrapy.Spider):
 
     # 爬取指定页面数量，传递给parse_page()
     def parse(self, response):
-        page = 80
+        page = 1
         url = "http://www.banyuetan.org/chcontent/sz/szgc/index.shtml"
         yield scrapy.Request(url, callback=self.parse_page)
         if page >= 2:
