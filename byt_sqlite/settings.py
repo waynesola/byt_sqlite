@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for byt_szjj project
+# Scrapy settings for byt_sqlite project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,13 +9,13 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'byt_szjj'
+BOT_NAME = 'byt_sqlite'
 
-SPIDER_MODULES = ['byt_szjj.spiders']
-NEWSPIDER_MODULE = 'byt_szjj.spiders'
+SPIDER_MODULES = ['byt_sqlite.spiders']
+NEWSPIDER_MODULE = 'byt_sqlite.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'byt_szjj (+http://www.yourdomain.com)'
+# USER_AGENT = 'byt_sqlite (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -46,13 +46,13 @@ COOKIES_ENABLED = False
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'byt_szjj.middlewares.BytSzjjSpiderMiddleware': 543,
+#    'byt_sqlite.middlewares.BytSzjjSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'byt_szjj.middlewares.RandomUserAgent': 1,
+    'byt_sqlite.middlewares.RandomUserAgent': 1,
 }
 
 # Enable or disable extensions
@@ -64,7 +64,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'byt_szjj.pipelines.BytSzjjPipeline': 300,
+    'byt_sqlite.pipelines.BytSzjjPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
